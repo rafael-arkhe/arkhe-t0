@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Criteria AGI-P2P Stack",
+  "type": "object",
+  "properties": {
+    "spec_id": { "type": "string", "const": "AKG-AGI-0001" },
+    "version": { "type": "string", "const": "0.1" },
+    "status": { "type": "string", "const": "PENDING" },
+    "layers": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 4
+    }
+  },
+  "required": ["spec_id", "version", "status", "layers"]
+}

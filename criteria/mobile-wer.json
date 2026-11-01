@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Criteria Mobile WER and Sealed MMR",
+  "type": "object",
+  "properties": {
+    "spec_id": { "type": "string", "const": "AKG-MOB-0001" },
+    "version": { "type": "string", "const": "0.1" },
+    "status": { "type": "string", "const": "PENDING" },
+    "falsifiers": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 2
+    }
+  },
+  "required": ["spec_id", "version", "status", "falsifiers"]
+}
