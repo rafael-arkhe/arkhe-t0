@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Criteria Meta-Verify",
+  "type": "object",
+  "properties": {
+    "spec_id": { "type": "string", "const": "AKG-META-0001" },
+    "version": { "type": "string", "const": "0.2" },
+    "status": { "type": "string", "const": "PENDING" },
+    "gates": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["spec_id", "version", "status"]
+}

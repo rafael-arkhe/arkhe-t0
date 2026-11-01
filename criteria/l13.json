@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Criteria L13",
+  "type": "object",
+  "properties": {
+    "spec_id": { "type": "string", "const": "AKG-L13-0001" },
+    "version": { "type": "string", "const": "0.3" },
+    "status": { "type": "string", "const": "PENDING" },
+    "gates": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["spec_id", "version", "status"]
+}

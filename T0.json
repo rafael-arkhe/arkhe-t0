@@ -1,0 +1,186 @@
+{
+  "schema_version": "arkhe-t0-v1",
+  "t0_date": "2026-10-31T00:00:00Z",
+  "scope": {
+    "normative": [
+      "specs/",
+      "criteria/",
+      "method/"
+    ],
+    "descriptive": [
+      "CHANGELOG.md",
+      "golden_vectors/",
+      "README.md",
+      "non-claims.md",
+      "verify_t0.sh"
+    ],
+    "excluded": [
+      "implementations/",
+      "executions/"
+    ]
+  },
+  "hash_algorithm": "sha256-hex-lowercase",
+  "artifacts": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "4bbc7e4315196e0953479891775661dc3816f12efe7ea95463379aaa7c3eaeec",
+      "tau": "LEMMA",
+      "normative": false,
+      "note": "proveniência de refutações"
+    },
+    {
+      "path": "README.md",
+      "sha256": "750ea2048ecbbb7f793f081fa7abe9f5b4db6a2365b68adbba7d20581d66ae05",
+      "tau": "LEMMA",
+      "normative": false,
+      "note": "enquadramento público"
+    },
+    {
+      "path": "criteria/inv-bb.json",
+      "sha256": "9210eb0eff74dab28ce29c464ebbe2c9e97bb356c45589c599d5646b5bd3f48f",
+      "tau": "PENDING",
+      "normative": true,
+      "note": "critérios INV-BB"
+    },
+    {
+      "path": "criteria/l13.json",
+      "sha256": "972ef1b3e836c4c1b1ed7c7f5d397f9376aa79938ad11bef6ac6f21347e9f0c0",
+      "tau": "PENDING",
+      "normative": true,
+      "note": "critérios L13"
+    },
+    {
+      "path": "criteria/meta-verify.json",
+      "sha256": "d8d16d9396667fed5ccd55a9d6f2d4b7cf36d6b4a0fcb4eb773f09ccf9bc80fe",
+      "tau": "PENDING",
+      "normative": true,
+      "note": "critérios meta-verify"
+    },
+    {
+      "path": "golden_vectors/manifest.json",
+      "sha256": "ad8cbbc684d80f5d6c235e8732dfb2fbf0a682286ca61a086952e99d01eb51da",
+      "tau": "LEMMA",
+      "normative": false,
+      "note": "manifesto de golden vectors"
+    },
+    {
+      "path": "method/falsifier-discipline.md",
+      "sha256": "611eaa980af601e0eb15971f6ede7cb00042250345c49d85c660248ebf4d65fa",
+      "tau": "LEMMA",
+      "normative": true,
+      "note": "disciplina de falsificação"
+    },
+    {
+      "path": "method/t0-discipline.md",
+      "sha256": "221f38b3e8512b0882cec3be41a379ecdf8aa14e09ec48ed1af68280c346e1ee",
+      "tau": "LEMMA",
+      "normative": true,
+      "note": "disciplina de congelamento T0"
+    },
+    {
+      "path": "method/tau.md",
+      "sha256": "6b5fbea6ab2cf9bdba2d0bd6d496f1390172b39e7cb1028537b4ad5d1d0d7a00",
+      "tau": "LEMMA",
+      "normative": true,
+      "note": "classificação epistémica τ"
+    },
+    {
+      "path": "non-claims.md",
+      "sha256": "d8c6dad3c5b81b926bdc06d16b8a2b888f253fd059c3fc1b648ae168723ad93b",
+      "tau": "LEMMA",
+      "normative": false,
+      "note": "delimitação explícita de escopo"
+    },
+    {
+      "path": "specs/AKG-L13-0001-v0.3.md",
+      "sha256": "d97da8e2ba47df791cb7d89e60d265a1443e3c9cf98190f47f33e8dff3916058",
+      "tau": "PENDING",
+      "normative": true,
+      "note": "gate de contenção L13; execução PENDING"
+    },
+    {
+      "path": "specs/AKG-META-0001-v0.2.md",
+      "sha256": "939327d7c0998c221fd2c3e99f873b8fab3cc53aa027cdae5cb9d3a12f1d0ab7",
+      "tau": "PENDING",
+      "normative": true,
+      "note": "meta-verificação; execução PENDING"
+    },
+    {
+      "path": "specs/AKG-META-0002-v0.2.md",
+      "sha256": "b56a135c30169bd93e4ce34435b518ce1808df18b5184663f6cd87d1ccf0c83c",
+      "tau": "PENDING",
+      "normative": true,
+      "note": "proveniência e atestação; execução PENDING"
+    },
+    {
+      "path": "specs/arkhe-b-order-spec-v0.2.md",
+      "sha256": "0cc03ab5a0a5d1ffe106b837c10d084865d84cc0924f11108719f64853b9ed52",
+      "tau": "PENDING",
+      "normative": true,
+      "note": "especificação de ordem e canonicalidade; execução PENDING"
+    },
+    {
+      "path": "specs/arkhe-b-test-suite-v0.2.md",
+      "sha256": "63978dfcc2b43edf77bdf858e5b84fab41595f1a8cadba3d313bba83eef719af",
+      "tau": "PENDING",
+      "normative": true,
+      "note": "suíte de testes e falsificadores; execução PENDING"
+    },
+    {
+      "path": "specs/inv-bb-28.md",
+      "sha256": "eb45ba2ca4cf3d95fedd0a3f3d775239c545e763f521c2cced54470e3991142d",
+      "tau": "PENDING",
+      "normative": true,
+      "note": "28 invariantes caixa-preta; execução PENDING"
+    },
+    {
+      "path": "verify_t0.sh",
+      "sha256": "d99804d2cfbe2c977f8811798966815fa813e69536ebccd325fdb78e7cb48725",
+      "tau": "LEMMA",
+      "normative": false,
+      "note": "script público de verificação"
+    }
+  ],
+  "claims": [
+    {
+      "id": "T0-C-001",
+      "text": "IntentBinding exige serialização canónica e comparação campo a campo; digest isolado é insuficiente.",
+      "tau": "LEMMA",
+      "evidence": "specs/AKG-META-0001-v0.2.md §2; specs/arkhe-b-order-spec-v0.2.md §2",
+      "falsifier": "alterar amount_cents e recalcular o digest; o gate deve rejeitar"
+    },
+    {
+      "id": "T0-C-002",
+      "text": "Canonicalidade total de Ed25519 exige cinco verificações (S, A, R, small-order, cofactorless).",
+      "tau": "LEMMA",
+      "evidence": "RFC 8032; specs/arkhe-b-order-spec-v0.2.md §2",
+      "falsifier": "small_order_A_rejected; torsion_component_R_rejected"
+    },
+    {
+      "id": "T0-C-003",
+      "text": "ContainmentGate opera em quatro estados formais fail-closed (UNADMITTED, EVALUATING, ADMITTED, REJECTED) rejeitando transições ambíguas.",
+      "tau": "LEMMA",
+      "evidence": "specs/AKG-L13-0001-v0.3.md §2; specs/inv-bb-28.md §2",
+      "falsifier": "injeção de transição sem validação prévia de intent binding resulta em REJECTED imediato"
+    }
+  ],
+  "non_claims": [
+    "T0 não afirma que o Arkhe está implementado.",
+    "T0 não afirma prioridade sobre a ideia de 'verificação de execução de IA'.",
+    "T0 não afirma que os 28 INV-BB cobrem todas as classes de falha.",
+    "T0 não afirma que os falsificadores foram executados."
+  ],
+  "provenance": {
+    "changelog": "CHANGELOG.md",
+    "refuted_versions_included": true
+  },
+  "signatures": {
+    "git_commit": "<hash>",
+    "sigstore_bundle": "T0.json.bundle"
+  },
+  "amendment_policy": {
+    "t0_immutable": true,
+    "new_t0_requires": "T1 com novo T0.json e nova assinatura",
+    "old_t0_stays_public": true
+  }
+}

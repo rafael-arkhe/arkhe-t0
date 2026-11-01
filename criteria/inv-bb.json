@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Criteria INV-BB",
+  "type": "object",
+  "properties": {
+    "spec_id": { "type": "string", "const": "INV-BB-28" },
+    "version": { "type": "string", "const": "1.0" },
+    "status": { "type": "string", "const": "PENDING" },
+    "invariants_count": { "type": "integer", "const": 28 }
+  },
+  "required": ["spec_id", "version", "status", "invariants_count"]
+}
