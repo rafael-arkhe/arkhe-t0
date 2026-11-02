@@ -9,6 +9,7 @@ members = [
     "crates/l3-evidence/arkhe-mobile-mmr",
     "crates/l3-evidence/arkhe-mobile-verify",
     "crates/l4-governance/arkhe-openclaw",
+    "arkhe-test",
 ]
 
 [workspace.package]

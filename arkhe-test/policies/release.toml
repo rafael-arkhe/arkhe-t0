@@ -1,0 +1,19 @@
+# Arkhe-Test Release Policy
+# Strategy: Hermetic build, signed provenance, staged canary rollout, auto-halt
+
+[release]
+hermetic_build = true
+slsa_provenance_level = 3
+require_sbom = true
+
+[rollout]
+staged_percentages = [10, 25, 50, 100]
+canary_node_percentage = 5
+canary_min_success_rate = 0.995
+
+[auto_halt]
+max_error_rate = 0.005
+max_divergence_mmr = 0
+max_invalid_receipts_accepted = 0
+max_corrupt_chunks_accepted = 0
+max_rollback_time_seconds = 600
