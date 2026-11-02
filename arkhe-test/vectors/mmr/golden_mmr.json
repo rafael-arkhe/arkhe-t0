@@ -1,0 +1,6 @@
+{
+  "description": "MMR Golden Vectors for Arkhe Invariant I-04",
+  "domain": "AKG:MMR:v1",
+  "leaf_count": 3,
+  "append_only": true
+}

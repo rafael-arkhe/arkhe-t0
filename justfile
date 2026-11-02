@@ -5,3 +5,6 @@ check:
 
 test:
     cargo test --workspace
+
+test-pipeline:
+    cargo run -p arkhe-test

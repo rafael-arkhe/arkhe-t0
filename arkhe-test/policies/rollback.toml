@@ -1,0 +1,28 @@
+# Arkhe-Test Rollback Policy
+# Invariant I-T05: Rollback seguro
+# Rollback permitido para código e configuração.
+# Rollback NUNCA reescreve MMR, recibos ou checkpoints.
+# rollback => evidência existente intacta
+
+[rollback_scope]
+allowed_targets = [
+    "executable_binary",
+    "runtime_configuration",
+    "feature_flags",
+    "network_endpoints"
+]
+
+disallowed_targets = [
+    "mmr_storage",
+    "receipt_log",
+    "local_checkpoints",
+    "attestation_records",
+    "audit_bundles"
+]
+
+[evidence_preservation]
+require_append_only_migration = true
+prohibit_state_deletion = true
+verify_backward_readability = true
+max_rollback_latency_minutes = 10
+divergence_threshold = 0

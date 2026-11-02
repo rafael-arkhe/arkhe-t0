@@ -1,0 +1,18 @@
+{
+  "description": "AFiR Golden Vectors for Arkhe Invariant I-03",
+  "domain": "AKG:AFIR:v1",
+  "vectors": [
+    {
+      "inference_root": "6b5fbea6ab2cf9bdba2d0bd6d496f1390172b39e7cb1028537b4ad5d1d0d7a00",
+      "fragment_index": 0,
+      "expected_signature_len": 384,
+      "is_valid": true
+    },
+    {
+      "inference_root": "6b5fbea6ab2cf9bdba2d0bd6d496f1390172b39e7cb1028537b4ad5d1d0d7a00",
+      "fragment_index": 0,
+      "expected_signature_len": 0,
+      "is_valid": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+# Arkhe-Test Feature Flags Policy
+# Invariant I-T06: Feature flag não enfraquece segurança
+# flag not in {signature_check, hash_check, mmr_append_only, role_separation}
+
+[forbidden_controls]
+disallowed_targets = [
+    "signature_check",
+    "hash_check",
+    "mmr_append_only",
+    "role_separation",
+    "device_attestation",
+    "human_governance",
+    "proof_of_reward"
+]
+
+[flags."network.experimental_transport"]
+description = "Transporte alternativo P2P"
+allows = ["alternative_transport_protocol"]
+forbidden = ["chunk_validation", "hash_check"]
+default = false
+
+[flags."moe.receipt_tree"]
+description = "Ativação de árvore de recibos MoE"
+allows = ["receipt_tree_aggregation"]
+forbidden = ["receipt_signature", "signature_check"]
+default = false
+
+[flags."audit.bundle_v2"]
+description = "Formato de bundle v2 para auditoria"
+allows = ["bundle_v2_serialization"]
+forbidden = ["mmr_append_only", "root_validation"]
+default = false
+
+[flags."cal.anchor_batching"]
+description = "Frequência de ancoragem CAL"
+allows = ["batch_interval_tuning"]
+forbidden = ["offline_validity", "evidence_integrity"]
+default = false
+
+[flags."inference.zk_sampling"]
+description = "Taxa de amostragem de inferência ZK"
+allows = ["sampling_rate_tuning"]
+forbidden = ["minimum_mandatory_verification", "signature_check"]
+default = false
+
+[flags."mcp.action_tools"]
+description = "Exposição de ferramentas de escrita MCP"
+allows = ["write_tools_api"]
+forbidden = ["signed_mandate", "role_separation"]
+default = false
+
+[flags."governance.proposals"]
+description = "Criação de propostas de governança"
+allows = ["proposal_submission"]
+forbidden = ["human_canonization", "constitution_mutation"]
+default = false
